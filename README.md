@@ -8,28 +8,29 @@
     <img alt="License: MIT License" src="https://img.shields.io/badge/License-MIT License-yellow.svg" />
   </a>
 </p>
+<p>Thanks to <a href="https://github.com/loktar00/JQuery-Snowfall" target="_blank">loktar00</a> for his jQuery Snowfall Script.
 
 > Create snowflakes falling. Settings are in Wordpress Customizer's menu.
 
 ### ✨ [Demo](https://nimarahbar.com)
 
-## Install
+<!-- ## Install
 
 ```sh
 npm install
-```
+``` -->
 
-## Usage
-
+<!-- ## Usage -->
+<!-- 
 ```sh
 npm run start
-```
+``` -->
 
 ## Author
 
 👤 **Nima Rahbar**
 
-* Website: http://www.nimarahbar.com
+* Website: http://nimarahbar.com
 * Github: [@nima-rahbar](https://github.com/nima-rahbar)
 * LinkedIn: [@nimarahbar](https://linkedin.com/in/nimarahbar)
 
