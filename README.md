@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Snow Flakes Wordpress Plugin 👋</h1>
+<h1 align="center">Welcome to Snow Flakes Wordpress Plugin</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://nimarahbar.com" target="_blank">
@@ -8,9 +8,10 @@
     <img alt="License: MIT License" src="https://img.shields.io/badge/License-MIT License-yellow.svg" />
   </a>
 </p>
-<p>Thanks to <a href="https://github.com/loktar00/JQuery-Snowfall" target="_blank">loktar00</a> for his jQuery Snowfall Script.
 
 > Create snowflakes falling. Settings are in Wordpress Customizer's menu.
+
+> Thanks to <a href="https://github.com/loktar00/JQuery-Snowfall" target="_blank">loktar00</a> for his jQuery Snowfall Script.
 
 ### ✨ [Demo](https://nimarahbar.com)
 
