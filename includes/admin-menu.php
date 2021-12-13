@@ -85,8 +85,8 @@ function nr_snow_flakes_customize_register($wp_customize)
         'settings'   => 'snow_round',
         'type'       => 'radio',
         'choices'    => array(
-            'yes' => __('true', 'nr_snow_flakes'),
-            'no' => __('false', 'nr_snow_flakes'),
+            'no' => __('No', 'nr_snow_flakes'),
+            'yes' => __('Yes', 'nr_snow_flakes'),
         ),
     ));
 
@@ -100,8 +100,8 @@ function nr_snow_flakes_customize_register($wp_customize)
         'settings'   => 'snow_shadow',
         'type'       => 'radio',
         'choices'    => array(
-            'no' => __('false', 'nr_snow_flakes'),
-            'yes' => __('true', 'nr_snow_flakes'),
+            'no' => __('No', 'nr_snow_flakes'),
+            'yes' => __('Yes', 'nr_snow_flakes'),
         ),
     ));
 
