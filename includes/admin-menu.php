@@ -22,8 +22,9 @@ function nr_snow_flakes_customize_register($wp_customize)
         'settings'   => 'snow_enable',
         'type'       => 'radio',
         'choices'    => array(
-            'enable' => __('Enable Snow Flakes', 'nr_snow_flakes'),
-            'disable' => __('Disable Snow Flakes', 'nr_snow_flakes'),
+            'enable' => __('Enable', 'nr_snow_flakes'),
+            'schedule' => __('Schedule', 'nr_snow_flakes'),
+            'disable' => __('Disable', 'nr_snow_flakes'),
         ),
     ));
 
@@ -127,5 +128,41 @@ function nr_snow_flakes_customize_register($wp_customize)
         'settings'   => 'snow_collection',
         'type'       => 'text',
     ));
+
+    // Date fields
+    $wp_customize->add_setting('snow_start_date', array(
+        'capability' => 'theme_mod',
+        'sanitize_callback' => 'themeslug_sanitize_date',
+    ));
+
+    $wp_customize->add_control('snow_start_date_control', array(
+        'type' => 'date',
+        'section' => 'snow_flakes_section',
+        'settings'   => 'snow_start_date',
+        'label' => __('Start Date'),
+        'input_attrs' => array(
+            'placeholder' => __('yyyy/mm/dd'),
+        ),
+    ));
+    $wp_customize->add_setting('snow_end_date', array(
+        'capability' => 'theme_mod',
+        'sanitize_callback' => 'themeslug_sanitize_date',
+    ));
+
+    $wp_customize->add_control('snow_end_date_control', array(
+        'type' => 'date',
+        'section' => 'snow_flakes_section',
+        'settings'   => 'snow_end_date',
+        'label' => __('End Date'),
+        'input_attrs' => array(
+            'placeholder' => __('yyyy/mm/dd'),
+        ),
+    ));
+
+    function themeslug_sanitize_date($input)
+    {
+        $date = new DateTime($input);
+        return $date->format('Y-m-d');
+    }
 }
 add_action('customize_register', 'nr_snow_flakes_customize_register');

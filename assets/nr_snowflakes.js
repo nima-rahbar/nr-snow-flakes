@@ -1,6 +1,8 @@
 (function ($) { 
     $(function () {
-        if(params.enabled || false){
+        console.log(params);
+
+        if(params != null){
             $(document.body).snowfall({
                 deviceorientation : true,
                 flakeCount : (params.flakeCount) ? parseInt(params.flakeCount) : 100,
