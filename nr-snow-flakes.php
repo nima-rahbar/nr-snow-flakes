@@ -22,7 +22,7 @@ function nr_snow_flakes_enqueue_scripts()
 {
     $params = nr_snow_flakes_get_admin_options();
     wp_enqueue_script('nr_snow_flakes_core', plugin_dir_url(__FILE__) . 'assets/js/snowfall.jquery.min.js', array('jquery'), '1.7', true);
-    wp_register_script('nr_snow_flakes_custom', plugin_dir_url(__FILE__) . 'assets/js/nr_snowflakes.js', array('jquery', 'nr_snow_flakes_core'), time() . "0.1.0", true);
+    wp_register_script('nr_snow_flakes_custom', plugin_dir_url(__FILE__) . 'assets/js/nr_snowflakes.js', array('jquery', 'nr_snow_flakes_core'), "1.0.0", true);
     wp_localize_script('nr_snow_flakes_custom', 'params', $params);
     wp_enqueue_script('nr_snow_flakes_custom');
 }

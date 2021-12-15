@@ -25,7 +25,7 @@ class SnowFlakes
             wp_enqueue_script('nr_snow_flakes_core', plugin_dir_url(dirname(__FILE__)) . 'assets/js/snowfall.jquery.min.js', array('jquery'), '1.7', true);
             wp_enqueue_media();
             $options = get_option('snow_flakes_option_name'); // Array of All Options
-            wp_register_script('snow-flakes-admin', plugin_dir_url(dirname(__FILE__)) . 'assets/js/nr_snowflakes_admin.js', array('jquery', 'bs-core-scripts', 'nr_snow_flakes_core'), time(), true);
+            wp_register_script('snow-flakes-admin', plugin_dir_url(dirname(__FILE__)) . 'assets/js/nr_snowflakes_admin.js', array('jquery', 'bs-core-scripts', 'nr_snow_flakes_core'), '1.0.0', true);
             wp_localize_script('snow-flakes-admin', 'db_options', $options);
             wp_enqueue_script('snow-flakes-admin');
         }
