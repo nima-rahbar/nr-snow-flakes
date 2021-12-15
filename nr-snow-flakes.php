@@ -8,7 +8,7 @@
  * Author URI:      https://nimarahbar.com
  * Text Domain:     nr-snow-flakes
  * Domain Path:     /languages
- * Version:         0.1.1
+ * Version:         1.0.0
  *
  * @package         Nr_Snow_Flakes
  */
