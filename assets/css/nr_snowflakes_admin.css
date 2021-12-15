@@ -1,0 +1,23 @@
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+    background-color: rgb(13, 110, 253);
+    color: rgb(255, 255, 255);
+    border-color: rgb(34, 113, 177);
+    vertical-align: top;
+    border-radius: 0.25rem;
+}
+
+.wp-core-ui .button-secondary:hover, .wp-core-ui .button.hover, .wp-core-ui .button:hover {
+    background: rgb(11, 94, 215);
+    border-color: rgb(10, 88, 202);
+    color: rgb(255, 255, 255);
+}
+
+#collection_name_5 {
+    font-family: var(--bs-font-monospace);
+    font-size: 1em;
+    direction: ltr;
+    unicode-bidi: bidi-override;
+    font-size: .875em;
+    color: #d63384;
+    word-wrap: break-word;
+}

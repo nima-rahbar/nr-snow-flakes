@@ -1,2 +1,5 @@
 {
+    "intelephense.environment.includePaths": [
+        "D:\\xampp\\htdocs\\wordpress.test"
+    ]
 }
