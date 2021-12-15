@@ -4,6 +4,7 @@
             $("#snowflakes-preview .card-body").text("RUN");
         }
 
+        console.log(params);
         if (params != null) {
             $(document.body).snowfall({
                 deviceorientation: true,
