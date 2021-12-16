@@ -45,12 +45,44 @@
                 image: (db_options.image_8) ? db_options.image_8 : '',
                 collection: $('.card-footer'),
             };
-            console.log(options);
+            console.log(db_options);
 
-            if ($('input[name="snow_flakes_option_name[enable_snow_flakes_0]"]:checked').val() == 'disable') {
+            // Startup Show on loading
+            if ($('input[name="snow_flakes_option_name[enable_snow_flakes_0]"]:checked').val() == 'disable' || db_options.enable_snow_flakes_0 == 'disable') {
                 snowing(false);
             } else {
                 snowing(options);
+
+                // Loading icons
+                switch (db_options.enable_snow_flakes_0) {
+                    case 'enable':
+                        $("#status").html('<span class="dashicons dashicons-yes text-success fs-4"></span>');
+                        snowing(options);
+                        break;
+                    case 'schedule':
+                        $("#status").html('<span class="dashicons dashicons-calendar-alt text-warning fs-4"></span>');
+                        snowing(options);
+                        break;
+                    case 'disable':
+                        $("#status").html('<span class="dashicons dashicons-no text-danger fs-4"></span>');
+                        snowing(false);
+                        break;
+                }
+                    if(options.round) {
+                            $("#round").html('<span class="dashicons dashicons-yes text-success fs-4"></span>');
+                    }else{
+                            $("#round").html('<span class="dashicons dashicons-no text-danger fs-4"></span>');
+                    }
+
+                    if(options.shadow) {
+                            $("#shadow").html(
+								'<span class="dashicons dashicons-yes text-success fs-4"></span>'
+							);
+                    }else{
+                            $("#shadow").html(
+								'<span class="dashicons dashicons-no text-danger fs-4"></span>'
+							);
+                    }
             }
 
 
@@ -60,15 +92,15 @@
             $('input[name="snow_flakes_option_name[enable_snow_flakes_0]"]').on('change', function () {
                 switch ($(this).val()) {
                     case 'enable':
-                        $("#status").html('<span class="bi bi-check-lg text-success fs-4"></span>');
+                        $("#status").html('<span class="dashicons dashicons-yes text-success fs-4"></span>');
                         snowing(options);
                         break;
                     case 'schedule':
-                        $("#status").html('<span class="bi bi-calendar-check text-warning fs-4"></span>');
+                        $("#status").html('<span class="dashicons dashicons-calendar-alt text-warning fs-4"></span>');
                         snowing(options);
                         break;
                     case 'disable':
-                        $("#status").html('<span class="bi bi-x text-danger fs-4"></span>');
+                        $("#status").html('<span class="dashicons dashicons-no text-danger fs-4"></span>');
                         snowing(false);
                         break;
                 }
@@ -91,11 +123,11 @@
             $('input[name="snow_flakes_option_name[round_3]"]').on('change', function () {
                 switch ($(this).val()) {
                     case 'yes':
-                        $("#round").html('<span class="bi bi-check-lg text-success fs-4"></span>');
+                        $("#round").html('<span class="dashicons dashicons-yes text-success fs-4"></span>');
                         options.round = true;
                         break;
                     case 'no':
-                        $("#round").html('<span class="bi bi-x text-danger fs-4"></span>');
+                        $("#round").html('<span class="dashicons dashicons-no text-danger fs-4"></span>');
                         options.round = false;
                         break;
                 }
@@ -104,11 +136,11 @@
             $('input[name="snow_flakes_option_name[shadow_4]"]').on('change', function () {
                 switch ($(this).val()) {
                     case 'yes':
-                        $("#shadow").html('<span class="bi bi-check-lg text-success fs-4"></span>');
+                        $("#shadow").html('<span class="dashicons dashicons-yes text-success fs-4"></span>');
                         options.shadow = true;
                         break;
                     case 'no':
-                        $("#shadow").html('<span class="bi bi-x text-danger fs-4"></span>');
+                        $("#shadow").html('<span class="dashicons dashicons-no text-danger fs-4"></span>');
                         options.shadow = false;
                         break;
                 }
