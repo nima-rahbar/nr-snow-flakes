@@ -1,3 +1,5 @@
+.vscode/
+bin/
 .DS_Store
 phpcs.xml
 phpunit.xml
@@ -7,6 +9,8 @@ node_modules/
 *.sql
 *.tar.gz
 *.zip
+*.json
+*.md
 bin
 tests
 .distignore
@@ -16,3 +20,4 @@ Gruntfile.js
 phpunit.xml.dist
 package.json
 .editorconfig
+.vscode-upload.json
