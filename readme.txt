@@ -21,11 +21,12 @@ When you enable the plugin, you will see it\'s settings page under settings menu
 Nothing yet.
 
 == Screenshots ==
-1. Setting\'s page
+1. This screen shot description corresponds to screenshot-1.png. Setting\'s page
 
 == Changelog ==
-1.0.0
-Moved settings into admin section.
+= 1.0.0
+* First stable version.
+* Moved settings into admin section.
 
 == Upgrade Notice ==
 This is the first stable version.

@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:     Snow Flakes
- * Plugin URI:      https://hellenictechnologies.com
+ * Plugin URI:      https://nimarahbar.com
  * Description:     Create snowflakes falling. For settings go to customizer's menu.
  * Author:          Nima Rahbar
  * Author URI:      https://nimarahbar.com
@@ -15,7 +15,6 @@
 if (is_admin()) {
     require_once plugin_dir_path(__FILE__) . 'includes' . DIRECTORY_SEPARATOR . 'admin-menu.php';
 }
-//require_once plugin_dir_path(__FILE__).'includes'.DIRECTORY_SEPARATOR.'customizer-menu.php';
 
 add_action('wp_enqueue_scripts', 'nr_snow_flakes_enqueue_scripts');
 function nr_snow_flakes_enqueue_scripts()
