@@ -45,7 +45,6 @@
                 image: (db_options.image_8) ? db_options.image_8 : '',
                 collection: $('.card-footer'),
             };
-            console.log(db_options);
 
             // Startup Show on loading
             if ($('input[name="snow_flakes_option_name[enable_snow_flakes_0]"]:checked').val() == 'disable' || db_options.enable_snow_flakes_0 == 'disable') {
