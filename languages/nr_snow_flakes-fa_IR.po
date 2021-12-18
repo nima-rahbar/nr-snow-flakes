@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Snow Flakes\n"
-"POT-Creation-Date: 2021-12-18 17:19+0200\n"
-"PO-Revision-Date: 2021-12-18 17:23+0200\n"
+"POT-Creation-Date: 2021-12-18 18:01+0200\n"
+"PO-Revision-Date: 2021-12-18 18:06+0200\n"
 "Last-Translator: Nima Rahbar <me@nimarahbar.com>\n"
 "Language-Team: Nima Rahbar <me@nimarahbar.com>\n"
 "Language: fa_IR\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: nr-snow-flakes.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
@@ -33,7 +33,7 @@ msgstr "توسط <b>نیما رهبر</b>"
 
 #: includes/admin-menu.php:53
 msgid "Snow Flakes <span class=\"text-muted\">Preview</span>"
-msgstr "پیش نمایش دانه های <span class=\"text-muted\">برفی</span>"
+msgstr "<span class=\"text-muted\">پیش نمایش</span> دانه های برفی"
 
 #: includes/admin-menu.php:61
 msgid "Count"
@@ -97,7 +97,7 @@ msgid ""
 "side of the page."
 msgstr ""
 "شما می توانید تمام تنظیمات را در اینجا تنظیم کنید و آنها را در جعبه پیش "
-"نمایش در سمت راست صفحه ببینید."
+"نمایش در سمت چپ صفحه ببینید."
 
 #: includes/admin-menu.php:251
 msgid "Enable"
@@ -133,8 +133,8 @@ msgid ""
 "Create snowflakes falling. For customizing go to settings menu under main "
 "Settings."
 msgstr ""
-"بارش دانه های برف در سایت شما، برای سفارشی سازی به منوی تنظیمات داخل "
-"تنظیمات اصلی بروید."
+"بارش دانه های برف در سایت شما، برای سفارشی سازی به منوی تنظیمات داخل تنظیمات "
+"اصلی بروید."
 
 #. Author of the plugin/theme
 msgid "Nima Rahbar"

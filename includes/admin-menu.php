@@ -27,8 +27,8 @@ class SnowFlakes
     public function snow_flakes_add_plugin_page()
     {
         add_options_page(
-            __('Snow Flakes', 'nr-snow-flakes'), // page_title
-            __('Snow Flakes', 'nr-snow-flakes'), // menu_title
+            __('Snow Flakes', 'nr_snow_flakes'), // page_title
+            __('Snow Flakes', 'nr_snow_flakes'), // menu_title
             'manage_options', // capability
             'snow-flakes', // menu_slug
             array($this, 'snow_flakes_create_admin_page') // function
@@ -42,45 +42,45 @@ class SnowFlakes
         <div class="container-fluid mt-2">
             <div class="row">
                 <div class="col-12">
-                    <h2><?php echo __('Snow Flakes', 'nr-snow-flakes'); ?></h2>
-                    <h3 class="fs-4 text-muted"><?php echo __('By <b>Nima Rahbar</b>', 'nr-snow-flakes'); ?></h3>
+                    <h2><?php echo __('Snow Flakes', 'nr_snow_flakes'); ?></h2>
+                    <h3 class="fs-4 text-muted"><?php echo __('By <b>Nima Rahbar</b>', 'nr_snow_flakes'); ?></h3>
                 </div>
             </div>
             <hr>
             <div class="row">
                 <div class="col-sm-6 order-sm-2">
                     <div id="snowflakes-preview" class="card text-center bg-dark text-light w-100" style="max-width: none;">
-                        <h5 class="card-header"><?php echo __('Snow Flakes <span class="text-muted">Preview</span>', 'nr-snow-flakes'); ?></h5>
+                        <h5 class="card-header"><?php echo __('Snow Flakes <span class="text-muted">Preview</span>', 'nr_snow_flakes'); ?></h5>
                         <div class="card-body">
                             <table class="table table-borderless text-light">
                                 <tr>
-                                    <th class="text-start"><?php echo __('Snow Flakes', 'nr-snow-flakes'); ?></th>
+                                    <th class="text-start"><?php echo __('Snow Flakes', 'nr_snow_flakes'); ?></th>
                                     <td id="status" class="text-end"><span class="bi bi-x text-danger fs-4"></span></td>
                                 </tr>
                                 <tr>
-                                    <th class="text-start"><?php echo __('Count', 'nr-snow-flakes'); ?></th>
+                                    <th class="text-start"><?php echo __('Count', 'nr_snow_flakes'); ?></th>
                                     <td id="count" class=" text-end fs-4">-</td>
                                 </tr>
                                 <tr>
-                                    <th class="text-start"><?php echo __('Minimum Size', 'nr-snow-flakes'); ?></th>
+                                    <th class="text-start"><?php echo __('Minimum Size', 'nr_snow_flakes'); ?></th>
                                     <td id="minSize" class="text-end fs-4">-</td>
                                 </tr>
                                 <tr>
-                                    <th class="text-start"><?php echo __('Maximum Size', 'nr-snow-flakes'); ?></th>
+                                    <th class="text-start"><?php echo __('Maximum Size', 'nr_snow_flakes'); ?></th>
                                     <td id="maxSize" class="text-end fs-4">-</td>
                                 </tr>
                                 <tr>
-                                    <th class="text-start"><?php echo __('Round', 'nr-snow-flakes'); ?></th>
+                                    <th class="text-start"><?php echo __('Round', 'nr_snow_flakes'); ?></th>
                                     <td id="round" class="text-end"><span class="bi bi-x text-danger fs-4"></td>
                                 </tr>
                                 <tr>
-                                    <th class="text-start"><?php echo __('Shadow', 'nr-snow-flakes'); ?></th>
+                                    <th class="text-start"><?php echo __('Shadow', 'nr_snow_flakes'); ?></th>
                                     <td id="shadow" class="text-end"><span class="bi bi-x text-danger fs-4"></td>
                                 </tr>
                             </table>
                         </div>
                         <div class="card-footer">
-                            <p><?php echo __('In admin area "Collection" will be here!', 'nr-snow-flakes'); ?></p>
+                            <p><?php echo __('In admin area "Collection" will be here!', 'nr_snow_flakes'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -107,14 +107,14 @@ class SnowFlakes
 
         add_settings_section(
             'snow_flakes_setting_section', // id
-            __('Settings', 'nr-snow-flakes'), // title
+            __('Settings', 'nr_snow_flakes'), // title
             array($this, 'snow_flakes_section_info'), // callback
             'snow-flakes-admin' // page
         );
 
         add_settings_field(
             'enable_snow_flakes_0', // id
-            __('Enable Snow Flakes', 'nr-snow-flakes'), // title
+            __('Enable Snow Flakes', 'nr_snow_flakes'), // title
             array($this, 'enable_snow_flakes_0_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
@@ -122,7 +122,7 @@ class SnowFlakes
 
         add_settings_field(
             'flakes_count_1', // id
-            __('Flakes Count', 'nr-snow-flakes'), // title
+            __('Flakes Count', 'nr_snow_flakes'), // title
             array($this, 'flakes_count_1_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
@@ -130,7 +130,7 @@ class SnowFlakes
 
         add_settings_field(
             'minimum_size_2', // id
-            __('Minimum Size', 'nr-snow-flakes'), // title
+            __('Minimum Size', 'nr_snow_flakes'), // title
             array($this, 'minimum_size_2_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
@@ -138,7 +138,7 @@ class SnowFlakes
 
         add_settings_field(
             'maximum_size_2', // id
-            __('Maximum Size', 'nr-snow-flakes'), // title
+            __('Maximum Size', 'nr_snow_flakes'), // title
             array($this, 'maximum_size_2_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
@@ -146,7 +146,7 @@ class SnowFlakes
 
         add_settings_field(
             'round_3', // id
-            __('Round', 'nr-snow-flakes'), // title
+            __('Round', 'nr_snow_flakes'), // title
             array($this, 'round_3_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
@@ -154,7 +154,7 @@ class SnowFlakes
 
         add_settings_field(
             'shadow_4', // id
-            __('Shadow', 'nr-snow-flakes'), // title
+            __('Shadow', 'nr_snow_flakes'), // title
             array($this, 'shadow_4_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
@@ -162,14 +162,14 @@ class SnowFlakes
 
         add_settings_field(
             'image_8', // id
-            __('Flakes Image', 'nr-snow-flakes'), // title
+            __('Flakes Image', 'nr_snow_flakes'), // title
             array($this, 'image_8_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
         );
         add_settings_field(
             'collection_name_5', // id
-            __('Collection Name', 'nr-snow-flakes'), // title
+            __('Collection Name', 'nr_snow_flakes'), // title
             array($this, 'collection_name_5_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
@@ -177,7 +177,7 @@ class SnowFlakes
 
         add_settings_field(
             'start_date_6', // id
-            __('Start Date', 'nr-snow-flakes'), // title
+            __('Start Date', 'nr_snow_flakes'), // title
             array($this, 'start_date_6_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
@@ -185,7 +185,7 @@ class SnowFlakes
 
         add_settings_field(
             'end_date_7', // id
-            __('End Date', 'nr-snow-flakes'), // title
+            __('End Date', 'nr_snow_flakes'), // title
             array($this, 'end_date_7_callback'), // callback
             'snow-flakes-admin', // page
             'snow_flakes_setting_section' // section
@@ -239,7 +239,7 @@ class SnowFlakes
 
     public function snow_flakes_section_info()
     {
-        echo __("You can set all the settings here and see them in preview box on the right side of the page.", 'nr-snow-flakes');
+        echo __("You can set all the settings here and see them in preview box on the right side of the page.", 'nr_snow_flakes');
     }
 
     public function enable_snow_flakes_0_callback()
@@ -248,17 +248,17 @@ class SnowFlakes
             <div class="form-check">
                 <?php $checked = (isset($this->snow_flakes_options['enable_snow_flakes_0']) && $this->snow_flakes_options['enable_snow_flakes_0'] === 'enable') ? 'checked' : ''; ?>
                 <input type="radio" class="form-check-input" name="snow_flakes_option_name[enable_snow_flakes_0]" id="enable_snow_flakes_0-0" value="enable" <?php echo $checked; ?>>
-                <label class="form-check-label" for="enable_snow_flakes_0-0"><?php echo __('Enable', 'nr-snow-flakes'); ?></label>
+                <label class="form-check-label" for="enable_snow_flakes_0-0"><?php echo __('Enable', 'nr_snow_flakes'); ?></label>
             </div>
             <div class="form-check">
                 <?php $checked = (isset($this->snow_flakes_options['enable_snow_flakes_0']) && $this->snow_flakes_options['enable_snow_flakes_0'] === 'schedule') ? 'checked' : ''; ?>
                 <input type="radio" class="form-check-input" name="snow_flakes_option_name[enable_snow_flakes_0]" id="enable_snow_flakes_0-1" value="schedule" <?php echo $checked; ?>>
-                <label class="form-check-label" for="enable_snow_flakes_0-1"><?php echo __('Schedule', 'nr-snow-flakes'); ?></label>
+                <label class="form-check-label" for="enable_snow_flakes_0-1"><?php echo __('Schedule', 'nr_snow_flakes'); ?></label>
             </div>
             <div class="form-check">
                 <?php $checked = (isset($this->snow_flakes_options['enable_snow_flakes_0']) && $this->snow_flakes_options['enable_snow_flakes_0'] === 'disable') ? 'checked' : ''; ?>
                 <input type="radio" class="form-check-input" name="snow_flakes_option_name[enable_snow_flakes_0]" id="enable_snow_flakes_0-2" value="disable" <?php echo ($checked) ? $checked : ''; ?>>
-                <label class="form-check-label" for="enable_snow_flakes_0-2"><?php echo __('Disable', 'nr-snow-flakes'); ?></label>
+                <label class="form-check-label" for="enable_snow_flakes_0-2"><?php echo __('Disable', 'nr_snow_flakes'); ?></label>
             </div>
         </fieldset>
     <?php
@@ -293,12 +293,12 @@ class SnowFlakes
             <div class="form-check">
                 <?php $checked = (isset($this->snow_flakes_options['round_3']) && $this->snow_flakes_options['round_3'] === 'no') ? 'checked' : ''; ?>
                 <input type="radio" class="form-check-input" name="snow_flakes_option_name[round_3]" id="round_3-0" value="no" <?php echo ($checked) ? $checked : 'checked'; ?>>
-                <label class="form-check-label" for="round_3-0"><?php echo __('No', 'nr-snow-flakes'); ?></label>
+                <label class="form-check-label" for="round_3-0"><?php echo __('No', 'nr_snow_flakes'); ?></label>
             </div>
             <div class="form-check">
                 <?php $checked = (isset($this->snow_flakes_options['round_3']) && $this->snow_flakes_options['round_3'] === 'yes') ? 'checked' : ''; ?>
                 <input type="radio" class="form-check-input" name="snow_flakes_option_name[round_3]" id="round_3-1" value="yes" <?php echo $checked; ?>>
-                <label class="form-check-label" for="round_3-1"><?php echo __('Yes', 'nr-snow-flakes'); ?></label>
+                <label class="form-check-label" for="round_3-1"><?php echo __('Yes', 'nr_snow_flakes'); ?></label>
             </div>
         </fieldset>
     <?php
@@ -310,12 +310,12 @@ class SnowFlakes
             <div class="form-check">
                 <?php $checked = (isset($this->snow_flakes_options['shadow_4']) && $this->snow_flakes_options['shadow_4'] === 'no') ? 'checked' : ''; ?>
                 <input type="radio" class="form-check-input" name="snow_flakes_option_name[shadow_4]" id="shadow_4-0" value="no" <?php echo ($checked) ? $checked : 'checked'; ?>>
-                <label class="form-check-label" for="shadow_4-0"><?php echo __('No', 'nr-snow-flakes'); ?></label>
+                <label class="form-check-label" for="shadow_4-0"><?php echo __('No', 'nr_snow_flakes'); ?></label>
             </div>
             <div class="form-check">
                 <?php $checked = (isset($this->snow_flakes_options['shadow_4']) && $this->snow_flakes_options['shadow_4'] === 'yes') ? 'checked' : ''; ?>
                 <input type="radio" class="form-check-input" name="snow_flakes_option_name[shadow_4]" id="shadow_4-1" value="yes" <?php echo $checked; ?>>
-                <label class="form-check-label" for="shadow_4-1"><?php echo __('Yes', 'nr-snow-flakes'); ?></label>
+                <label class="form-check-label" for="shadow_4-1"><?php echo __('Yes', 'nr_snow_flakes'); ?></label>
             </div>
         </fieldset>
 <?php
@@ -324,7 +324,7 @@ class SnowFlakes
     public function image_8_callback()
     {
         printf(
-            '<div class="input-group input-group-sm"><input class="form-control" type="text" name="snow_flakes_option_name[image_8]" id="image_8" value="%s"><input id="upload_image_button" class="button" type="button" value="'. __( 'Upload Image', 'nr-snow-flakes').'" />',
+            '<div class="input-group input-group-sm"><input class="form-control" type="text" name="snow_flakes_option_name[image_8]" id="image_8" value="%s"><input id="upload_image_button" class="button" type="button" value="'. __( 'Upload Image', 'nr_snow_flakes').'" />',
             isset($this->snow_flakes_options['image_8']) ? esc_attr($this->snow_flakes_options['image_8']) : ''
         );
     }

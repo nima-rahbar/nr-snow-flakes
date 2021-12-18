@@ -6,7 +6,7 @@
  * Description:     Create snowflakes falling. For customizing go to settings menu under main Settings.
  * Author:          Nima Rahbar
  * Author URI:      https://nimarahbar.com
- * Text Domain:     nr-snow-flakes
+ * Text Domain:     nr_snow_flakes
  * Domain Path:     /languages
  * Version:         1.0.0
  *
@@ -15,7 +15,11 @@
 if (is_admin()) {
     require_once plugin_dir_path(__FILE__) . 'includes' . DIRECTORY_SEPARATOR . 'admin-menu.php';
 }
-
+add_action('init', 'nr_snow_flakes_load_textdomain');
+function nr_snow_flakes_load_textdomain()
+{
+    load_plugin_textdomain('nr_snow_flakes', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+}
 add_action('wp_enqueue_scripts', 'nr_snow_flakes_enqueue_scripts');
 function nr_snow_flakes_enqueue_scripts()
 {
@@ -29,7 +33,7 @@ function nr_snow_flakes_enqueue_scripts()
 add_action('wp_footer', 'nr_snow_flakes_get_admin_options');
 function nr_snow_flakes_get_admin_options()
 {
-    /* 
+    /* `
     * Retrieve this value with:
     * $snow_flakes_options = get_option( 'snow_flakes_option_name' ); // Array of All Options
     * $enable_snow_flakes_0 = $snow_flakes_options['enable_snow_flakes_0']; // Enable Snow Flakes
