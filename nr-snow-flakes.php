@@ -3,7 +3,7 @@
 /**
  * Plugin Name:     Snow Flakes
  * Plugin URI:      https://nimarahbar.com
- * Description:     Create snowflakes falling. For settings go to customizer's menu.
+ * Description:     Create snowflakes falling. For customizing go to settings menu under main Settings.
  * Author:          Nima Rahbar
  * Author URI:      https://nimarahbar.com
  * Text Domain:     nr-snow-flakes
